@@ -270,7 +270,7 @@ $paragraphs = $para_stmt->get_result();
     <!-- Footer -->
     <footer class="bg-dark text-white py-4 mt-5">
         <div class="container text-center">
-            <p>&copy; <?php echo date('Y'); ?> BlogCMS. All rights reserved.</p>
+            <p>&copy; <?php echo date('Y'); ?> Syed Yusuf Hussaini. All rights reserved.</p>
             <p class="mb-0">
                 <a href="admin-login.php" class="text-white-50">Admin Login</a> | 
                 <a href="index.php" class="text-white-50">Home</a>

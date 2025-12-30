@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BlogHub - Read Amazing Articles</title>
+    <title>Syed Yusuf Hussaini - Read Amazing Articles</title>
     <meta name="description" content="Discover amazing blog posts on various topics. Read, learn, and get inspired.">
     <meta name="keywords" content="blog, articles, reading, content, news">
     
@@ -148,7 +148,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
         <div class="container">
             <a class="navbar-brand fw-bold text-primary" href="index.php">
-                <i class="fas fa-blog me-2"></i>BlogHub
+                <i class="fas fa-blog me-2"></i>BlogCMS
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -243,7 +243,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <h3 class="mb-3">BlogHub</h3>
+                    <h3 class="mb-3">Syed Yusuf Hussaini</h3>
                     <p class="text-white-50">Sharing knowledge and inspiring readers through quality content.</p>
                 </div>
                 <div class="col-lg-3">
@@ -266,7 +266,7 @@
             </div>
             <hr class="bg-white-50 my-4">
             <div class="text-center">
-                <p class="mb-0 text-white-50">&copy; <?php echo date('Y'); ?> BlogHub. All rights reserved.</p>
+                <p class="mb-0 text-white-50">&copy; <?php echo date('Y'); ?> Syed Yusuf Hussaini. All rights reserved.</p>
             </div>
         </div>
     </footer>
