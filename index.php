@@ -243,7 +243,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <h3 class="mb-3">Syed Yusuf Hussaini</h3>
+                    <h3 class="mb-3">BlogCMS</h3>
                     <p class="text-white-50">Sharing knowledge and inspiring readers through quality content.</p>
                 </div>
                 <div class="col-lg-3">
