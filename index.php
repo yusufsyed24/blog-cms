@@ -8,6 +8,26 @@
     <title>Syed Yusuf Hussaini - Read Amazing Articles</title>
     <meta name="description" content="Discover amazing blog posts on various topics. Read, learn, and get inspired.">
     <meta name="keywords" content="blog, articles, reading, content, news">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+ <!-- Primary SEO Meta Tags -->
+    <title>Syed Yusuf Hussaini - Discover Amazing Articles & Blogs</title>
+    <meta name="description" content="Explore insightful blogs and articles by Syed Yusuf Hussaini. Stay inspired, learn something new every day, and discover amazing stories.">
+    <meta name="keywords" content="Syed Yusuf Hussaini, blog, articles, reading, content, news, lifestyle, learning">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://blog-cms.infinityfree.me/index.php">
+
+<!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Syed Yusuf Hussaini - Discover Amazing Articles & Blogs">
+    <meta property="og:description" content="Explore insightful blogs and articles by Syed Yusuf Hussaini. Stay inspired, learn something new every day, and discover amazing stories.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://blog-cms.infinityfree.me/index.php">
+    <meta property="og:image" content="https://blog-cms.infinityfree.me/uploads/hero-image.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Syed Yusuf Hussaini - Discover Amazing Articles & Blogs">
+    <meta name="twitter:description" content="Explore insightful blogs and articles by Syed Yusuf Hussaini. Stay inspired, learn something new every day, and discover amazing stories.">
+    <meta name="twitter:image" content="https://blog-cms.infinityfree.me/uploads/hero-image.jpg">
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
