@@ -1,0 +1,272 @@
+# ======================================
+# Blog CMS - Robots.txt File
+# ======================================
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /admin-add-blog.php
+Disallow: /admin-blogs.php
+Disallow: /admin-edit-blog.php
+Disallow: /admin-delete-blog.php
+Disallow: /admin-login.php
+Disallow: /admin-categories.php
+Disallow: /admin-comments.php
+Disallow: /admin-users.php
+Disallow: /logout.php
+Disallow: /add-comment.php
+Disallow: /uploads/admin/
+Disallow: /uploads/temp/
+
+# Dynamic URLs to avoid
+Disallow: /*?action=
+Disallow: /*?search=
+Disallow: /*?page=
+Disallow: /*?sort=
+Disallow: /*?filter=
+Disallow: /*?mode=
+
+# Query parameters that should be ignored
+Disallow: /*?*
+Allow: /*?slug=
+Allow: /*?category=
+
+# Sitemap location
+Sitemap: https://blog-cms.infinityfree.me/sitemap.xml
+
+# ======================================
+# Specific Bot Instructions
+# ======================================
+
+# Googlebot
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+Disallow: /*.php$
+Allow: /*.php?slug=
+Allow: /*.php?category=
+Crawl-delay: 1
+
+# Googlebot-Image
+User-agent: Googlebot-Image
+Allow: /uploads/
+Disallow: /uploads/admin/
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.gif$
+Allow: /*.webp$
+
+# Bingbot
+User-agent: Bingbot
+Allow: /
+Disallow: /admin/
+Crawl-delay: 2
+
+# Yandex
+User-agent: Yandex
+Allow: /
+Disallow: /admin/
+Crawl-delay: 3
+Clean-param: utm_source&utm_medium&utm_campaign
+
+# Baidu
+User-agent: Baiduspider
+Disallow: /
+
+# GPTBot (ChatGPT crawler)
+User-agent: GPTBot
+Disallow: /
+
+# CCBot (Common Crawler)
+User-agent: CCBot
+Allow: /
+Disallow: /admin/
+Crawl-delay: 10
+
+# ======================================
+# Bad Bots - Block Known Bad Crawlers
+# ======================================
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: MauiBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: ia_archiver
+Disallow: /
+
+User-agent: Applebot
+Allow: /
+Disallow: /admin/
+Crawl-delay: 5
+
+# ======================================
+# Crawl Rate & Optimization
+# ======================================
+
+# Crawl delay for all bots (in seconds)
+User-agent: *
+Crawl-delay: 2
+
+# Allow specific file types
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /*.webp$
+Allow: /*.ico$
+Allow: /*.woff$
+Allow: /*.woff2$
+Allow: /*.ttf$
+Allow: /*.eot$
+
+# Block unnecessary file extensions
+Disallow: /*.ini$
+Disallow: /*.log$
+Disallow: /*.sql$
+Disallow: /*.bak$
+Disallow: /*.old$
+Disallow: /*.temp$
+Disallow: /*.tmp$
+
+# Block specific directories
+Disallow: /backup/
+Disallow: /cgi-bin/
+Disallow: /config/
+Disallow: /database/
+Disallow: /includes/
+Disallow: /logs/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /tmp/
+
+# ======================================
+# Dynamic Content Rules
+# ======================================
+
+# Allow search engines to crawl dynamic blog content
+Allow: /blog-detail.php?slug=*
+Allow: /index.php?category=*
+
+# But block admin parameters
+Disallow: /*?edit=
+Disallow: /*?delete=
+Disallow: /*?action=delete
+Disallow: /*?action=edit
+Disallow: /*?admin=true
+
+# ======================================
+# Media & Resources
+# ======================================
+
+# Allow image directories
+Allow: /uploads/blog/
+Allow: /uploads/thumbnails/
+
+# Disallow user upload directories
+Disallow: /uploads/users/
+Disallow: /uploads/avatars/
+
+# ======================================
+# Session & Tracking Parameters
+# ======================================
+
+# Common tracking parameters to ignore
+Disallow: /*?sessionid=
+Disallow: /*?sid=
+Disallow: /*?phpsessid=
+Disallow: /*?jsessionid=
+Disallow: /*?referrer=
+Disallow: /*?fbclid=
+Disallow: /*?gclid=
+Disallow: /*?msclkid=
+Disallow: /*?utm_*
+Disallow: /*?ref=*
+
+# ======================================
+# Pagination Rules
+# ======================================
+
+# Allow pagination but with limits
+Allow: /index.php?page=1
+Allow: /index.php?page=2
+Allow: /index.php?page=3
+Disallow: /index.php?page=4
+Disallow: /index.php?page=5
+Disallow: /index.php?page=6
+Disallow: /index.php?page=7
+Disallow: /index.php?page=8
+Disallow: /index.php?page=9
+Disallow: /index.php?page=10
+
+# ======================================
+# Mobile & AMP (if applicable)
+# ======================================
+
+# Googlebot-Mobile
+User-agent: Googlebot-Mobile
+Allow: /
+Disallow: /admin/
+Crawl-delay: 1
+
+# Mediapartners-Google (AdSense)
+User-agent: Mediapartners-Google
+Allow: /
+
+# AdsBot-Google (AdWords)
+User-agent: AdsBot-Google
+Allow: /
+Disallow: /admin/
+
+# ======================================
+# Comment & User Generated Content
+# ======================================
+
+# Allow comments to be crawled (if you want)
+Allow: /blog-detail.php#comments
+
+# But block comment submission forms
+Disallow: /*?comment=submit
+Disallow: /*?action=post_comment
+
+# ======================================
+# SEO Optimization Notes
+# ======================================
+
+# This robots.txt file is optimized for:
+# 1. Allowing search engines to crawl public content
+# 2. Protecting admin areas and sensitive data
+# 3. Preventing duplicate content issues
+# 4. Optimizing crawl budget
+# 5. Blocking malicious bots
+
+# Last updated: <?php echo date('Y-m-d'); ?>
+
+# ======================================
+# Additional Notes for InfinityFree
+# ======================================
+
+# InfinityFree specific considerations:
+# - Ensure public_html permissions are correct
+# - Monitor .htaccess for conflicts
+# - Check server logs for crawl errors
+
+# For better SEO, also create:
+# 1. sitemap.xml
+# 2. .htaccess for URL rewriting
+# 3. Proper 404 page
+# 4. SSL certificate (HTTPS)
