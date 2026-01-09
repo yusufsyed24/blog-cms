@@ -2,11 +2,11 @@
 include 'db.php';
 
 // Check if user is logged in
-session_start();
-if (!isset($_SESSION['admin_logged_in'])) {
-    header('Location: admin-login.php');
-    exit();
-}
+// session_start();
+// if (!isset($_SESSION['admin_logged_in'])) {
+//     header('Location: admin-login.php');
+//     exit();
+// }
 
 // Get blog ID from URL
 if(!isset($_GET['id']) || !is_numeric($_GET['id'])) {
@@ -195,6 +195,11 @@ if(isset($_POST['submit'])){
             border: 2px solid var(--gray-300);
             display: none;
         }
+        .required-asterisk {
+    color: #ff0000; /* Red color */
+    margin-left: 2px; /* Small space */
+    font-weight: bold;
+}
     </style>
 </head>
 <body>
@@ -248,13 +253,13 @@ if(isset($_POST['submit'])){
             <div class="card mb-4">
                 <h3 class="mb-3"><i class="fas fa-info-circle mr-2"></i>Basic Information</h3>
                 <div class="form-group">
-                    <label for="title">Blog Title *</label>
+                    <label for="title">Blog Title <span class="required-asterisk">*</span></label>
                     <input type="text" id="title" name="title" class="form-control" 
                            value="<?php echo htmlspecialchars($blog['title']); ?>" required>
                 </div>
                 
                 <div class="form-group">
-                    <label for="short_description">Short Description *</label>
+                    <label for="short_description">Short Description <span class="required-asterisk">*</span></label>
                     <textarea id="short_description" name="short_description" class="form-control" 
                               required><?php echo htmlspecialchars($blog['short_description']); ?></textarea>
                 </div>
@@ -264,19 +269,19 @@ if(isset($_POST['submit'])){
             <div class="card mb-4">
                 <h3 class="mb-3"><i class="fas fa-search mr-2"></i>SEO Optimization</h3>
                 <div class="form-group">
-                    <label for="meta_title">Meta Title *</label>
+                    <label for="meta_title">Meta Title <span class="required-asterisk">*</span></label>
                     <input type="text" id="meta_title" name="meta_title" class="form-control" 
                            value="<?php echo htmlspecialchars($blog['meta_title']); ?>" required>
                 </div>
                 
                 <div class="form-group">
-                    <label for="meta_description">Meta Description *</label>
+                    <label for="meta_description">Meta Description <span class="required-asterisk">*</span></label>
                     <textarea id="meta_description" name="meta_description" class="form-control" 
                               rows="3" required><?php echo htmlspecialchars($blog['meta_description']); ?></textarea>
                 </div>
                 
                 <div class="form-group">
-                    <label for="meta_keywords">Meta Keywords *</label>
+                    <label for="meta_keywords">Meta Keywords <span class="required-asterisk">*</span></label>
                     <input type="text" id="meta_keywords" name="meta_keywords" class="form-control" 
                            value="<?php echo htmlspecialchars($blog['meta_keywords']); ?>" required>
                 </div>

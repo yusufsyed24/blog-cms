@@ -84,6 +84,11 @@ include 'db.php';
             border: 2px solid var(--gray-300);
             display: none;
         }
+        .required-asterisk {
+    color: #ff0000; /* Red color */
+    margin-left: 2px; /* Small space */
+    font-weight: bold;
+}
     </style>
 </head>
 <body>
@@ -186,12 +191,12 @@ include 'db.php';
             <div class="card mb-4">
                 <h3 class="mb-3"><i class="fas fa-info-circle mr-2"></i>Basic Information</h3>
                 <div class="form-group">
-                    <label for="title">Blog Title *</label>
+                    <label for="title">Blog Title <span class="required-asterisk">*</span></label>
                     <input type="text" id="title" name="title" class="form-control" placeholder="Enter blog title" required>
                 </div>
                 
                 <div class="form-group">
-                    <label for="short_description">Short Description *</label>
+                    <label for="short_description">Short Description <span class="required-asterisk">*</span></label>
                     <textarea id="short_description" name="short_description" class="form-control" placeholder="Brief description of the blog" required></textarea>
                 </div>
             </div>
@@ -200,17 +205,17 @@ include 'db.php';
             <div class="card mb-4">
                 <h3 class="mb-3"><i class="fas fa-search mr-2"></i>SEO Optimization</h3>
                 <div class="form-group">
-                    <label for="meta_title">Meta Title *</label>
+                    <label for="meta_title">Meta Title <span class="required-asterisk">*</span></label>
                     <input type="text" id="meta_title" name="meta_title" class="form-control" placeholder="Title for search engines" required>
                 </div>
                 
                 <div class="form-group">
-                    <label for="meta_description">Meta Description *</label>
+                    <label for="meta_description">Meta Description <span class="required-asterisk">*</span></label>
                     <textarea id="meta_description" name="meta_description" class="form-control" placeholder="Description for search results" rows="3" required></textarea>
                 </div>
                 
                 <div class="form-group">
-                    <label for="meta_keywords">Meta Keywords *</label>
+                    <label for="meta_keywords">Meta Keywords <span class="required-asterisk">*</span></label>
                     <input type="text" id="meta_keywords" name="meta_keywords" class="form-control" placeholder="Keywords separated by commas" required>
                 </div>
             </div>
