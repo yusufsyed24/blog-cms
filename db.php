@@ -1,6 +1,10 @@
 <?php
 session_start();
 
+// Define site constants
+define('SITE_NAME', 'My Blog CMS');
+define('SITE_URL', 'http://localhost/blog-cms');
+
 $host = "localhost";
 $username = "root";
 $password = "";
